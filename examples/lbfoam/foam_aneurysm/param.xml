@@ -3,13 +3,12 @@
 <!-- Parameters set by the user. -->
 
 <geometry>
+    <mesh>aneurysm.stl</mesh>
     <!-- Size of the simulation domain. This domain is [0,lx] x [0,ly] x [0,lz].
          The gravity is in the direction of the -z axis. -->
-    <simulationDomain>
-        <nx> 100 </nx>
-        <ny> 100 </ny>
-        <nz> 100 </nz>
-    </simulationDomain>
+    <openings>
+        <type> Inlet Outlet Outlet </type>
+    </openings>
     <!-- Initial height of the pool of fluid.
          The fluid pool is the domain [0,lx] x [0.ly] x [0, fluidPoolHeight]. -->
     <fluidPoolHeight_LB> 50 </fluidPoolHeight_LB>
